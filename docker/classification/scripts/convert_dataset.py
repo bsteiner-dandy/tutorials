@@ -194,6 +194,9 @@ def run(raw_data_dir, dataset_dir):
   _NUM_VALIDATION = int(len(photo_filenames) * 0.2)
   training_filenames = photo_filenames[_NUM_VALIDATION:]
   validation_filenames = photo_filenames[:_NUM_VALIDATION]
+  print('Validation count: ' + str(len(validation_filenames)))
+  print('Training count: ' + str(len(training_filenames)))
+
 
   # First, convert the training and validation sets.
   _convert_dataset('train', training_filenames, class_names_to_ids,
