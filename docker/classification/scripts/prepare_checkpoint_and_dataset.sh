@@ -56,11 +56,11 @@ ckpt_name="${ckpt_name_map[${network_type}]}"
 wget -O "${ckpt_name}.tgz" "${ckpt_link}"
 tar zxvf "${ckpt_name}.tgz"
 
-echo "PREPARING dataset ..."
-mkdir -p "${DATASET_DIR}"
-cd "${SLIM_DIR}"
-python download_and_convert_data.py \
-  --dataset_name=flowers \
-  --dataset_dir="${DATASET_DIR}"
+# echo "PREPARING dataset ..."
+# mkdir -p "${DATASET_DIR}"
+# cd "${SLIM_DIR}"
+# python download_and_convert_data.py \
+#   --dataset_name=flowers \
+#   --dataset_dir="${DATASET_DIR}"
 
 echo "CHECKPOINT and dataset available in ${LEARN_DIR}"
