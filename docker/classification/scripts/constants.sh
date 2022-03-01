@@ -63,8 +63,8 @@ output_tensors_map["inception_v4"]="InceptionV4/Logits/Predictions"
 
 # Assuming scripts are in tensorflow/models/research/slim folder.
 SLIM_DIR="$PWD"
-LEARN_DIR="${SLIM_DIR}/transfer_learn"
+LEARN_DIR="/content/drive/MyDrive/tf/transfer_learn"
 CKPT_DIR="${LEARN_DIR}/ckpt"
-DATASET_DIR="${LEARN_DIR}/flowers"
+DATASET_DIR="${LEARN_DIR}/dandy"
 TRAIN_DIR="${LEARN_DIR}/train"
 OUTPUT_DIR="${LEARN_DIR}/models"

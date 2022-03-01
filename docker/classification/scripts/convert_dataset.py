@@ -207,7 +207,7 @@ def run(raw_data_dir, dataset_dir):
   dataset_utils.write_label_file(labels_to_class_names, dataset_dir)
 
   _clean_up_temporary_files(dataset_dir)
-  print('\nFinished converting the Flowers dataset!')
+  print('\nFinished converting the dataset!')
 
 def main():
     run(sys.argv[1], sys.argv[2])
@@ -215,4 +215,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
